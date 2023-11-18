@@ -1,0 +1,25 @@
+<div class="matricula-form">
+    <h2>Formulario de Matrícula</h2>
+  
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="name_s">Nombre:</label>
+        <input type="text" id="name_s" [(ngModel)]="formData.name_s" name="name_s" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="lastname_s">Apellido:</label>
+        <input type="text" id="lastname_s" [(ngModel)]="formData.lastname_s" name="lastname_s" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="cost">Costo:</label>
+        <input type="number" id="cost" [(ngModel)]="formData.cost" name="cost" required>
+      </div>
+  
+      <!-- Agrega más campos del formulario aquí -->
+  
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  

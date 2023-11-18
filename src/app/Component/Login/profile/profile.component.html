@@ -1,0 +1,31 @@
+<!-- profile.component.html -->
+<div class="profile-container">
+    <div class="profile-header">
+      <div class="profile-header-content">
+        <img class="profile-icon" [src]="userData.icon" alt="Profile Icon">
+        <h1>{{ userData.name }} {{ userData.lastname }}</h1>
+      </div>
+    </div>
+    <div class="profile-details">
+      <form>
+        <div class="detail-row">
+          <label class="detail-label" for="email">Email:</label>
+          <input type="text" readonly="true" id="email" name="email" class="detail-value" [(ngModel)]="userData.email">
+        </div>
+        <div class="detail-row">
+          <label class="detail-label" for="username">Nombre de Usuario:</label>
+          <input type="text" id="username" readonly="true" name="username" class="detail-value" [(ngModel)]="userData.nickname">
+        </div>
+        <div class="detail-row">
+          <label class="detail-label" for="role">Rol:</label>
+          <input type="text" id="role" readonly="true" name="role" class="detail-value" [(ngModel)]="userData.role">
+        </div>
+        <div class="detail-row">
+          <label class="detail-label" for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" class="detail-value" [(ngModel)]="userData.password">
+        </div>
+        <button type="submit">Guardar Cambios</button>
+      </form>
+    </div>
+  </div>
+  

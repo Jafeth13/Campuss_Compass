@@ -1,0 +1,79 @@
+<!-- menu.component.html -->
+<mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+   
+  </mat-toolbar>
+  
+
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <img
+        class="avatar mat-elevation-z8"
+        src="assets/OIG.jpeg"
+      />
+      <h4 class="name">CampusCompass</h4>
+      <p class="designation">Aprende con nosotros</p>
+  
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" routerLink="/home">
+        <mat-icon style="color: aliceblue;">home</mat-icon>
+        <span style="color: aliceblue;">Home</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/Management" *ngIf="isLocalStorageFull()">
+        <mat-icon style="color: aliceblue;">school</mat-icon>
+        <span style="color: aliceblue;">Gestion Academica</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/Course" >
+        <mat-icon style="color: aliceblue;">book</mat-icon>
+        <span style="color: aliceblue;">Cursos</span>
+      </button>
+  
+      <button mat-button class="menu-button" routerLink="/Registration" *ngIf="isLocalStorageFull()">
+        <mat-icon style="color: aliceblue;">book</mat-icon>
+        <span style="color: aliceblue;">Matricula</span>
+      </button>
+
+      <button mat-button class="menu-button" routerLink="/Finance" *ngIf="isLocalStorageFull()">
+        <mat-icon style="color: aliceblue;">money</mat-icon>
+        <span style="color: aliceblue;">Finanzas</span>
+      </button>
+
+      <button mat-button class="menu-button" id="botonperfil"   routerLink="/profile" *ngIf="isLocalStorageFull()">
+        <mat-icon style="color: aliceblue;">account_circle</mat-icon>
+        <span style="color: aliceblue;">Perfil</span>
+      </button>
+      
+  
+      <mat-divider></mat-divider>
+  <p>Contacto</p>
+  
+  <a  href="mailto:jafeth1352001@gmail.com" target="_blank">
+      <button mat-button class="menu-button">
+        <i style="color: aliceblue;"class="uil uil-envelope"></i>
+        
+        <span style="color: aliceblue;">Gmail</span>
+      </button>
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item (click)="exit()" class="menu-link" *ngIf="isLocalStorageFull()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Salir</span>
+      </a>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+       
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

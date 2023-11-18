@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-form {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.section-heading {
+  color: #007bff;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}

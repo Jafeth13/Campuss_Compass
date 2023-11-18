@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="center-form">
+      <div class="text-center">
+        <h1 class="section-heading text-uppercase">Registrar Curso</h1>
+      </div>
+  
+      <form [formGroup]="courseForm" class="example-full-width">
+        <div class="form-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Carnet del profesor</mat-label>
+            <input matInput formControlName="carnet_professor" placeholder="Ingresa carnet del profesor" />
+          </mat-form-field>
+        </div>
+  
+        <div class="form-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Horario</mat-label>
+            <input matInput formControlName="schedule" placeholder="Ingresa horario" />
+          </mat-form-field>
+        </div>
+  
+        <div class="form-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Tamaño</mat-label>
+            <input matInput formControlName="size" placeholder="Ingresa tamaño" />
+          </mat-form-field>
+        </div>
+  
+        <div class="form-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Aula</mat-label>
+            <input matInput formControlName="room" placeholder="Ingresa aula" />
+          </mat-form-field>
+        </div>
+  
+        <div class="text-center">
+          <button mat-raised-button class="register-button" (click)="onSubmit()">Registrar Curso</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

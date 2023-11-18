@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="center-form">
+    <div class="text-center">
+      <h1 class="section-heading text-uppercase">Registro</h1>
+    </div>
+
+    <form [formGroup]="accountForm" class="example-full-width">
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="name" placeholder="Ingresa el Nombre" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Apellido</mat-label>
+          <input matInput formControlName="lastname" placeholder="Ingresa el Apellido" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" placeholder="Ingresa el correo" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Nombre de Usuario</mat-label>
+          <input matInput formControlName="userName" placeholder="Ingresa el nick name" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña</mat-label>
+          <input  type="password" matInput formControlName="password" placeholder="Ingresa la Contraseña" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Ingresa de nuevo la Contraseña</mat-label>
+          <input type="password" matInput formControlName="passwordConfirm" placeholder="Ingresa de nuevo la Contraseña" />
+        </mat-form-field>
+      </div>
+
+      <div class="text-center">
+        <button mat-raised-button class="register-button" (click)="onSubmit()">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

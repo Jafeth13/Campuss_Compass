@@ -1,0 +1,36 @@
+.cartas{
+    text-align:center;
+    margin:0px auto;
+}
+
+mat-toolbar {
+    justify-content: space-between;
+}
+
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+}
+
+.title{
+    text-align:center;
+}
+
+.bienvenida-container {
+   
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+
+  .container {
+    /* Puedes ajustar los estilos del contenedor principal según tus preferencias */
+    margin-top: 20px;
+  }

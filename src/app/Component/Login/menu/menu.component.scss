@@ -1,0 +1,128 @@
+.full-height-sidenav {
+    height: 100%;
+  }
+  
+  /* Asegúrate de que el contenido principal tenga una altura del 100% */
+  .mat-sidenav-content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .avatar {
+    max-width: 100px; /* Establece el ancho máximo deseado */
+    max-height: 100px; /* Establece la altura máxima deseada */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+  }
+
+
+  .mat-toolbar button {
+    color: #fff; /* Color del icono del menú */
+    font-size: 24px; /* Tamaño del icono del menú */
+  }
+  
+  /* Estilo para los enlaces del menú */
+  .menu-link {
+    color: #333; /* Color del texto de los enlaces del menú */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+  }
+  
+  .menu-link:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+  }
+
+  .name, .designation {
+    text-align: center;
+  }
+
+
+  /* Añade estos estilos al final de tu archivo de estilos CSS */
+
+.menu-link {
+  color: #007bff; /* Cambia el color del texto de los enlaces del menú a azul */
+}
+
+.menu-link:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.menu-header {
+  background-color: #FFF; /* Cambia el color de fondo del encabezado del menú a azul */
+  color: #007bff; /* Cambia el color del texto del encabezado del menú a blanco */
+  padding: 16px; /* Ajusta el espaciado del encabezado del menú */
+}
+
+.avatar {
+  max-width: 80px; /* Reduce el tamaño máximo de la imagen del avatar */
+  max-height: 80px; /* Reduce el tamaño máximo de la imagen del avatar */
+  width: auto;
+  height: auto;
+}
+
+.mat-toolbar button {
+  color: #007bff; /* Cambia el color del icono del menú a azul */
+  font-size: 24px;
+}
+
+
+
+.menu-link {
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.avatar {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+}
+
+.mat-toolbar button {
+  color: #007bff;
+  font-size: 24px;
+}
+
+.mat-sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.menu-footer a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.menu-footer a:hover {
+  background-color: #f0f0f0;
+}
